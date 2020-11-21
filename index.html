@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TBD: Detection of Deprecated API in ML frameworks</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">  
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">TBD</span><span class="text-bold">Docs</span>
+                        </a>
+                    </h1>
+                    
+                </div>
+                
+                <div class="top-search-box">
+	                 <form class="form-inline search-form justify-content-center" action="" method="get">
+	            
+			            <input type="text" placeholder="Search..." name="search" class="form-control search-input">
+			            
+			            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+			            
+			        </form>
+                </div>
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Quick Start</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: Nov 1st, 2020</div>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="download-section" class="doc-section">'
+                                <h1 class="section-title">TBD: A TOOL TO DETECT DEPRECATED APIS IN ML FRAMEWORKS</h1>
+                                <h3 class="block-title">Tool Description</h3>
+                                <div class="section-block">
+                                    <p> Write your abstract here - or a quick description</p>
+                                    <a href="https://github.com/rishitha957/ADepD/archive/main.zip" class="btn btn-green" target="_blank"><i class="fas fa-download"></i> Download Tool Zip</a>
+                                </div>
+                            </section><!--//doc-section-->
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Manual Installation</h2>
+                                <div id="step1"  class="section-block">
+                                    <h3 class="block-title">Using Github</h3>
+                                    <div class="code-block">
+                                        <h6>Default code example:</h6>
+                                        <p>Clone our repository using git</p>
+                                        <p><code>git clone https://github.com/rishitha957/ADepD.git</code></p>
+                                        <p>Activate virtual environment for python (if any). Run main.py file using the following command, and pass the path of ML library as the parameter.</p>
+                                        <p><code>python main.py &lt;path to ML library&gt;</code></p>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            <section id="icons-section" class="doc-section">
+                                <h2 class="section-title">Approach diagram</h2>
+                                <div class="section-block">
+                                    <p>Brief explanation of approach here</p>
+                                </div><!--//section-block-->
+                                <div class="section-block">
+                                    <img class="img-fluid" src="assets/images/demo/updated_process_diagram.PNG" alt="elegant icons" />
+                                </div><!--//section-block-->
+                                
+                            </section><!--//doc-section-->
+                            <section id="code-section" class="doc-section">
+                                <h2 class="section-title">Code</h2>
+                                <div class="section-block">
+                                    <p>
+                                        Basic explanation here..
+                                    </p>
+                                    
+                                </div><!--//section-block-->
+                                <div id="html" class="section-block">
+                                    <div class="code-block">
+                                        <h6>Parsing class (to include more)</h6>
+                                        <pre><code class="language-python">
+class ClassVisitor(ast.NodeVisitor):
+    def __init__(self):
+        self.class_names = []
+        self._class_nodes = []
+        self._func_nodes = []
+    def generic_visit(self,node):
+        if isinstance(node, ast.ClassDef):
+            self.class_names.append(node.name)
+            self._class_nodes.append(node)
+        ast.NodeVisitor.generic_visit(self,node)
+                                        </code></pre>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            <section id="tables-section" class="doc-section">
+                                <h2 class="section-title">Results</h2>
+                                <div class="section-block">
+                                    <p>Brief explanation about results here
+                                    </p>
+                                </div>
+                                <div class="section-block">
+                                    <p>screen shot of results here</p>
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            <section id="video-section" class="doc-section">
+                                <h2 class="section-title">Demo Video</h2>
+                                <div class="section-block">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <h6>Demo video here</h6>
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/mkDxuRvKUL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div><!--//row-->
+                                </div><!--//section-block-->
+                            
+                            
+                            </section><!--//doc-section-->
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                        
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+	                                <a class="nav-link scrollto" href="#download-section">Download</a>
+	                                <a class="nav-link scrollto" href="#installation-section">Manual Installation</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#step1">Using Github</a>
+                                    </nav><!--//nav-->
+                                    <a class="nav-link scrollto" href="#icons-section">Approach diagram</a>
+	                                <a class="nav-link scrollto" href="#code-section">Code</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#html">Parsing class</a>
+                                    </nav><!--//nav-->
+	                                <a class="nav-link scrollto" href="#tables-section">Results</a>
+	                                <a class="nav-link scrollto" href="#video-section">Demo Video</a>
+	                            </nav><!--//doc-menu-->
+	                        
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+        <div id="promo-block" class="promo-block">
+            <div class="container">
+                <div class="promo-block-inner">
+                    <h3 class="promo-title text-center">References</h3>
+                    <div class="content-holder col-lg-7 col-md-6 col-7">
+                        <div class="content-holder-inner">
+                            <div class="desc">
+                                <p> Names here </p>
+                            </div><!--//desc-->
+                        </div><!--//content-holder-inner-->
+                    </div><!--//content-holder-->
+                    <h3 class="promo-title text-center">Contributors</h3>
+                    <div class="content-holder col-lg-7 col-md-6 col-7">
+                        <div class="content-holder-inner">
+                            <div class="desc">
+                                <p> Names here </p>
+                                <a class="btn btn-cta" href="" target="_blank"><i class="fas fa-external-link-alt"></i> Preprint</a>
+                            </div><!--//desc-->
+                        </div><!--//content-holder-inner-->
+                    </div><!--//content-holder-->
+
+                </div><!--//promo-block-inner-->  
+            </div><!--//container-->
+        </div><!--//promo-block-->
+        
+    </div><!--//page-wrapper-->
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+
