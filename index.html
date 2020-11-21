@@ -32,7 +32,7 @@
                     <h1 class="logo">
                         <a href="index.html">
                             <span aria-hidden="true" class="icon_documents_alt icon"></span>
-                            <span class="text-highlight">TBD</span><span class="text-bold">Docs</span>
+                            <span class="text-highlight">AC2</span><span class="text-bold">Docs</span>
                         </a>
                     </h1>
                     
@@ -54,78 +54,143 @@
             <div class="container">
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Quick Start</h1>
-                    <div class="meta"><i class="far fa-clock"></i> Last updated: Nov 1st, 2020</div>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: Nov 21st, 2020</div>
                 </div><!--//doc-header-->
                 <div class="doc-body row">
                     <div class="doc-content col-md-9 col-12 order-1">
                         <div class="content-inner">
                             <section id="download-section" class="doc-section">'
-                                <h1 class="section-title">TBD: A TOOL TO DETECT DEPRECATED APIS IN ML FRAMEWORKS</h1>
+                                <h1 class="section-title">AC2: Towards Understanding Architectural Changes in Python Projects</h1>
+                                <br>
                                 <h3 class="block-title">Tool Description</h3>
                                 <div class="section-block">
-                                    <p> Write your abstract here - or a quick description</p>
+                                    <p> AC2 is used to comprehend the architecture changes in a software system over multiple releases for python projects. Many open source repositories have faster release cycles. 
+                                        More releases in less time leads to frequent changes 
+                                        in the system. Understanding the impact of these regular 
+                                        changes in the term of architecture is important as it will 
+                                        decide the system stability. Therefore comprehending architectural 
+                                        changes visually allows the user to get a better understanding 
+                                        of the growing complexity of their software. 
+
+                                    </p>
                                     <a href="https://github.com/rishitha957/ADepD/archive/main.zip" class="btn btn-green" target="_blank"><i class="fas fa-download"></i> Download Tool Zip</a>
                                 </div>
                             </section><!--//doc-section-->
                             <section id="installation-section" class="doc-section">
                                 <h2 class="section-title">Manual Installation</h2>
                                 <div id="step1"  class="section-block">
-                                    <h3 class="block-title">Using Github</h3>
+                                    <h3 class="block-title">From Github</h3>
                                     <div class="code-block">
-                                        <h6>Default code example:</h6>
-                                        <p>Clone our repository using git</p>
-                                        <p><code>git clone https://github.com/rishitha957/ADepD.git</code></p>
-                                        <p>Activate virtual environment for python (if any). Run main.py file using the following command, and pass the path of ML library as the parameter.</p>
-                                        <p><code>python main.py &lt;path to ML library&gt;</code></p>
+                                        
+                                        <p>Clone or download this github repository:</p>
+                                        <p><code>git clone https://github.com/dheerajrox/AC2.git</code></p>
+                                        <p>Get into the main directory:</p>
+                                        <p><code>cd AC2/src/main</code></p>
+                                        <p>Install the requirements:</p>
+                                        <p><code>pip install -r requirements.txt</code></p>
+                                        <p>To start the server use the following command:</p>
+                                        <p><code>python main.py</code></p>
+                                        <p>Then, open your browser to 'http://localhost:5000/'</p>
+                                        
                                     </div><!--//code-block-->
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
                             <section id="icons-section" class="doc-section">
                                 <h2 class="section-title">Approach diagram</h2>
                                 <div class="section-block">
-                                    <p>Brief explanation of approach here</p>
+                                    <p>AC2 uses call and collaboration graphs to represent architecture as a structure consisting of different components, and their interactions. It compares the changes in the architecture between different versions by visualizing it in a modular, hierarchical, and in an interactive manner.</p>
                                 </div><!--//section-block-->
                                 <div class="section-block">
                                     <img class="img-fluid" src="assets/images/demo/updated_process_diagram.PNG" alt="elegant icons" />
                                 </div><!--//section-block-->
                                 
-                            </section><!--//doc-section-->
-                            <section id="code-section" class="doc-section">
-                                <h2 class="section-title">Code</h2>
+                            </section>
+
+
+
+                            <section id="feature-section" class="doc-section">
+                                <h2 class="section-title">Features</h2>
                                 <div class="section-block">
-                                    <p>
-                                        Basic explanation here..
-                                    </p>
-                                    
-                                </div><!--//section-block-->
-                                <div id="html" class="section-block">
-                                    <div class="code-block">
-                                        <h6>Parsing class (to include more)</h6>
-                                        <pre><code class="language-python">
-class ClassVisitor(ast.NodeVisitor):
-    def __init__(self):
-        self.class_names = []
-        self._class_nodes = []
-        self._func_nodes = []
-    def generic_visit(self,node):
-        if isinstance(node, ast.ClassDef):
-            self.class_names.append(node.name)
-            self._class_nodes.append(node)
-        ast.NodeVisitor.generic_visit(self,node)
-                                        </code></pre>
-                                    </div><!--//code-block-->
-                                </div><!--//section-block-->
-                            </section><!--//doc-section-->
-                            <section id="tables-section" class="doc-section">
-                                <h2 class="section-title">Results</h2>
-                                <div class="section-block">
-                                    <p>Brief explanation about results here
-                                    </p>
+                                    AC2 display four different types of views: (put one image for each view)
+                                    <br><br>
+                                    <ul>
+                                        <li>
+                                            Directory View: It showcases the architectural changes at a higher level of abstraction. It shows a hierarchical view describing the changes in the project's directories and file structure.
+
+                                        </li>
+                                        <li>
+                                            Call Graph View: It displays the interaction between subroutines. Functions definition and calls are the architectural components for this view. The call graph generated is for the specific directory which the user is exploring, not for the whole project.
+
+                                        </li>
+                                        <li>
+                                            Collaboration View: In this view, files, class definitions, and modules are considered as architectural components. Similar to call graphs, the collaboration graph generated is for the specific directory which the user is exploring.
+
+                                        </li>
+                                        <li>
+                                            Integrated View: It displays the combination of both call and collaboration graphs. This view gives an overall detailed view of the specific directory consisting of components, such as files, function definition, function calls, class definition, and modules.
+
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="section-block">
-                                    <p>screen shot of results here</p>
-                                </div><!--//section-block-->
+                                
                             </section><!--//doc-section-->
+
+                            <section id="uses-section" class="doc-section">
+                                <h2 class="section-title">Uses</h2>
+                                <div class="section-block">
+                                    <ul>
+                                        <li>
+                                            Many open source repositories are having faster release cycles. More releases in less time leads to frequent changes in the system. Understanding the impact of these regular changes in the term of architecture is important as it will decide the system stability. Therefore comprehending architectural changes visually allows the user to get a better understanding of the growing complexity of their software.
+
+                                        </li>
+                                        <li>
+                                            The users such as maintainers and Developers/Collaborators of the repositories can see the architectural changes over multiple releases and they can compare two releases at a time.
+                                        </li>
+                                        <li>
+                                            Architectural components like function definition, function calls, class, files, directories, modules are used in different views mentioned above. Comparing these two different releases allows them to comprehend the way the software is evolved are what components are included and removed during this process.
+
+                                        </li>
+                   
+                                    </ul>
+                                </div>
+                                
+                            </section><!--//doc-section-->
+
+
+                            <section id="metric-section" class="doc-section">
+                                <h2 class="section-title">Metrics used in AC2</h2>
+                                <div class="section-block">
+                                    <ul>
+                                        <li>
+                                            Cohesion using LCOM4
+                                        </li>
+                                        <li>
+                                            Architectural Similarity
+
+                                        </li>
+                                        <li>
+                                            Functional Similarity
+                                        </li>
+                                        <li>Class Similarity</li>
+                                        <li>Module Similarity</li>
+
+                                    </ul>
+                                </div>
+                                
+                            </section><!--//doc-section-->
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                             <section id="video-section" class="doc-section">
                                 <h2 class="section-title">Demo Video</h2>
                                 <div class="section-block">
@@ -152,12 +217,14 @@ class ClassVisitor(ast.NodeVisitor):
                                     <nav class="doc-sub-menu nav flex-column">
                                         <a class="nav-link scrollto" href="#step1">Using Github</a>
                                     </nav><!--//nav-->
-                                    <a class="nav-link scrollto" href="#icons-section">Approach diagram</a>
-	                                <a class="nav-link scrollto" href="#code-section">Code</a>
-                                    <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#icons-section">Approach</a>
+                                    <a class="nav-link scrollto" href="#feature-section">Features</a>
+                                    <a class="nav-link scrollto" href="#uses-section">Uses</a>
+                                    <a class="nav-link scrollto" href="#metric-section">Metrics</a>
+                                    <!-- <nav class="doc-sub-menu nav flex-column">
                                         <a class="nav-link scrollto" href="#html">Parsing class</a>
-                                    </nav><!--//nav-->
-	                                <a class="nav-link scrollto" href="#tables-section">Results</a>
+                                    </nav>//nav -->
+	                                <!-- <a class="nav-link scrollto" href="#tables-section">Results</a> -->
 	                                <a class="nav-link scrollto" href="#video-section">Demo Video</a>
 	                            </nav><!--//doc-menu-->
 	                        
@@ -203,4 +270,3 @@ class ClassVisitor(ast.NodeVisitor):
     
 </body>
 </html> 
-
