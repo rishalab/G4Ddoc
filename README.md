@@ -5,4 +5,4 @@
 
 ## Results
 We have evaluated 10 repositories using AC2. For each repository, we have compared its first release with its subsequent releases.
-![Results](https://github.com/dheerajrox/AC2doc/tree/main/Results)
+[Results](https://github.com/dheerajrox/AC2doc/tree/main/Results)
