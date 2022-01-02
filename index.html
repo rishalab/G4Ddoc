@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>AC<sup>2</sup>: Towards Understanding Architectural Changes in Python Projects</title>
+    <title>G4D++: A Treasure Hunt Game for Novice Programmers to Learn Debugging</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +32,7 @@
                     <h1 class="logo">
                         <a href="index.html">
 <!--                             <span aria-hidden="true" class="icon_documents_alt icon"></span> -->
-                            <span class="text-highlight">AC<sup>2</sup> </span><span class="text-bold">Docs</span>
+                            <span class="text-highlight">G4D++ </span><span class="text-bold">Docs</span>
                         </a>
                     </h1>
                     
@@ -60,17 +60,11 @@
                     <div class="doc-content col-md-9 col-12 order-1">
                         <div class="content-inner">
                             <section id="download-section" class="doc-section">'
-                                <h1 class="section-title">AC<sup>2</sup>: Towards Understanding Architectural Changes in Python Projects</h1>
+                                <h1 class="section-title">G4D++: A Treasure Hunt Game for Novice Programmers to Learn Debugging</h1>
                                 <br>
                                 <h3 class="block-title">Tool Description</h3>
                                 <div class="section-block">
-                                    <p> AC<sup>2</sup> is used to comprehend the architecture changes in a software system over multiple releases for python projects. Many open source repositories have faster release cycles. 
-                                        More releases in less time leads to frequent changes 
-                                        in the system. Understanding the impact of these regular 
-                                        changes in the term of architecture is important as it will 
-                                        decide the system stability. Therefore comprehending architectural 
-                                        changes visually allows the user to get a better understanding 
-                                        of the growing complexity of their software. 
+                                    <p> G4D++ aims to teach debugging to novice programmers through a treasure hunt based game. The steps involved in the process of debugging are scaffolded by the steps involved in finding clues and finally arranging all the clues found. 
 
                                     </p>
                                     <!-- <a href="https://github.com/rishitha957/ADepD/archive/main.zip" class="btn btn-green" target="_blank"><i class="fas fa-download"></i> Download Tool Zip</a> -->
@@ -83,14 +77,15 @@
                                     <div class="code-block">
                                         
                                         <p>Clone or download this github repository:</p>
-                                        <p><code>git clone https://github.com/dheerajrox/AC2.git</code></p>
-                                        <p>Get into the main directory:</p>
+                                        <p><code>git clone https://github.com/harmitsb2122/G4D-plus.git</code></p>
+                                        <!-- <p>Get into the main directory:</p>
                                         <p><code>cd AC2/src/main</code></p>
                                         <p>Install the requirements:</p>
                                         <p><code>pip install -r requirements.txt</code></p>
                                         <p>To start the server use the following command:</p>
                                         <p><code>python main.py</code></p>
-                                        <p>Then, open your browser to 'http://localhost:5000/'</p>
+                                        <p>Then, open your browser to 'http://localhost:5000/'</p> -->
+                                        <p>Open the project G4D from UnityHub.</p>
                                         
                                     </div><!--//code-block-->
                                 </div><!--//section-block-->
@@ -98,10 +93,10 @@
                             <section id="icons-section" class="doc-section">
                                 <h2 class="section-title">Approach diagram</h2>
                                 <div class="section-block">
-                                    <p>AC2 uses call and collaboration graphs to represent architecture as a structure consisting of different components, and their interactions. It compares the changes in the architecture between different versions by visualizing it in a modular, hierarchical, and in an interactive manner.</p>
+                                    <p>add smthing here</p>
                                 </div><!--//section-block-->
                                 <div class="section-block">
-                                    <img class="img-fluid" src="assets/images/demo/ac2_arch.png" alt="elegant icons" />
+                                    <img class="img-fluid" src="assets/images/Approach.jpeg" alt="elegant icons" />
                                 </div><!--//section-block-->
                                 
                             </section>
@@ -112,36 +107,57 @@
                                 <h2 class="section-title">Features</h2>
                                 <div class="section-block">
                                     
-                                    AC<sup>2</sup> recognizes the following entities:
+                                    <!-- AC<sup>2</sup> recognizes the following entities:
                                     <br>
                                     <img style="width: 80%;" src="assets/images//demo/legend.png">
-                                    <br><br>
-                                    AC<sup>2</sup> display four different types of views:
+                                    <br><br> -->
+                                    G4D++ has the following features
                                     <br><br>
 
                                     <ul>
                                         <li>
-                                            <strong>Directory View</strong>: It showcases the architectural changes at a higher level of abstraction. It shows a hierarchical view describing the changes in the project's directories and file structure.
+                                            <strong>Multiple levels and Multiple difficulties</strong>: The game consists of 3 levels and also difficulty can be set to Easy, Medium or Hard. 
                                             <br>
-                                            <img class="img-fluid" src="assets/images/demo/dir_view.png" alt="elegant icons" />
+                                            <img class="img-fluid" src="assets/images/multiple_difficulties.png" alt="various difficulty levels" />
                                             <br><br>
                                         </li>
                                         <li>
-                                            <strong>Call Graph View</strong>: It displays the interaction between subroutines. Functions definition and calls are the architectural components for this view. The call graph generated is for the specific directory which the user is exploring, not for the whole project.
+                                            <strong>Random Code Snippets</strong>: Each level has 3 different code snippets to debug out of which one will be chosen randomly and displayed in the game. The clue-boxes also have randomized clues.
                                             <br>
-                                            <img class="img-fluid" src="assets/images/demo/call_view.png" alt="elegant icons" />
+                                            <!-- <img class="img-fluid" src="assets/images/demo/dir_view.png" alt="elegant icons" /> -->
                                             <br><br>
                                         </li>
                                         <li>
-                                            <strong>Collaboration View</strong>: In this view, files, class definitions, and modules are considered as architectural components. Similar to call graphs, the collaboration graph generated is for the specific directory which the user is exploring.
+                                            <strong>Mini-Map</strong>: For easy navigation through the playing area, the game consists of a mini-map. The clue-boxes show up as red dots in the map when the player is in vicinity of the box.
                                             <br>
-                                            <img class="img-fluid" src="assets/images/demo/collab_view.png" alt="elegant icons" />
+                                            <img class="img-fluid" src="assets/images/minimap.png" alt="mini-map"  />
                                             <br><br>
                                         </li>
                                         <li>
-                                            <strong>Integrated View</strong>: It displays the combination of both call and collaboration graphs. This view gives an overall detailed view of the specific directory consisting of components, such as files, function definition, function calls, class definition, and modules.
+                                            <strong>Scoreboard</strong>: The game generates a score based on correct and wrong answers submitted by the player, this score can also be saved to a leaderboard by signing in from their account.
                                             <br>
-                                            <img class="img-fluid" src="assets/images/demo/integ_view.png" alt="elegant icons" />
+                                            <img class="img-fluid" src="assets/images/scoreboard.png" alt="elegant icons" />
+                                            <br><br>
+                                        </li>
+                                        <li>
+                                            <strong>Timer-Countdown</strong>: Each level need to be comepleted in a stipulated time. The remaining time is displayed in the top right corner of the screen.
+                                            <br>
+                                            <img class="img-fluid" src="assets/images/timer_countdown.png" alt="elegant icons" />
+                                            <br><br>
+                                        </li>
+                                        <li>
+                                            <strong>Prompt for Inactivity and Info-Zones</strong>: The game features a prompt for inactivity which pops up when there is no input from the player for a specified amount of time and the game is paused.From that prompt the player has the option to resume the game, go to the main menu or quit the game. <br> Info-Zones help the player to search in the correct direction by giving a prompt if the player is searching for the clue boxes at the wrong place
+
+                                            <br>
+                                            <img class="img-fluid" src="assets/images/inactivity_detection.png" alt="elegant icons" />
+                                            <img class="img-fluid" src="assets/images/info_zone1.png" alt="elegant icons" />
+                                            <img class="img-fluid" src="assets/images/info_zone2.png" alt="elegant icons" />
+                                            <br><br>
+                                        </li>
+                                        <li>
+                                            <strong>Multiple Characters</strong>: This version of the game provides the player a range of avatars to choose from which breaks the monotony of having to play with the same character all the time.
+                                            <br>
+                                            <img class="img-fluid" src="assets/images/character_selection.png" alt="elegant icons" />
                                             <br><br>
                                         </li>
                                     </ul>
@@ -154,54 +170,54 @@
                                 <div class="section-block">
                                     <ul>
                                         <li>
-                                            Many open source repositories are having faster release cycles. More releases in less time leads to frequent changes in the system. Understanding the impact of these regular changes in the term of architecture is important as it will decide the system stability. Therefore comprehending architectural changes visually allows the user to get a better understanding of the growing complexity of their software.
+                                            Novice programmers often find debugging as a difficult and time consuming task.Our game focuses on a way to teach debugging in a fun way and to develop their interest in the debugging process.
+                                        </li>
+                                        <li>
+                                            In the proposed game, we try to support novice programmers by encouraging them to isolate the chain and then correct the defect in the isolated chain.In this process they can learn the process of debugging in a more systematic way.
 
                                         </li>
                                         <li>
-                                            The users such as maintainers and Developers/Collaborators of the repositories can see the architectural changes over multiple releases and they can compare two releases at a time.
-                                        </li>
-                                        <li>
-                                            Architectural components like function definition, function calls, class, files, directories, modules are used in different views mentioned above. Comparing these two different releases allows them to comprehend the way the software is evolved are what components are included and removed during this process.
+                                            Since the game has a feature of saving the score on the leaderboard, players can compare their score  with others.This might motivate them to debug the code snippets more accurately and quickly.In this process their overall ability of debugging would be enhanced.
 
                                         </li>
                    
                                     </ul>
                                 </div>
                                 
-                            </section><!--//doc-section-->
+                            </section>
 
 
                             <section id="metric-section" class="doc-section">
-                                <h2 class="section-title">Metrics used in AC<sup>2</sup></h2>
+                                <h2 class="section-title">Instructions for G4D++</h2>
                                 <div class="section-block">
-                                    
-                                    <strong>Cohesion using LCOM4</strong>: It measures the degree to which componentsare functionally related. The values are stored in seperate files for each version.
-                                    <br><br>
-                                    <strong>A2A (Architecture-to-architecture)</strong>: It gives the similarity measure of the component-level changes between thearchitectures between two releases.
-                                    We modified the original A2A metric in the context of AC2 tool to get the following metrics:
-                                    <br><br>
                                     <ul>
                                         <li>
-                                            <strong>Architectural Similarity</strong>: It is calculated using directory viewwhere directory is considered as a component and files as its entities.
+                                            Players go around the planet to find clues that are hidden inside box-like structures. </li>
+                                        <li>Only some of these boxes contain clues.</li> 
+                                        <li>The boxes can be broken by sword (weapon).</li>
+                                        <li>Alien Enemies also appear around the planet that can be killed by attacking with the sword (weapon) with one to three hits.                                     </li>
+                                        <li>Some facilities such as moving ground can be activated by collecting stones, which are primarily in fire emitting a red shade and get cooled on collection emitting a blue shade.</li>
+                                        <li>Once all the clues are collected, the player can navigate to the spaceship, when the code snippet is displayed to the                                       player, with clues collected displayed adjacent to it.</li>
+                                        <li>The player can fill in the required clues in the form of text or drag and drop depending on the difficulty of the level at                                      appropriate places to finish the level.</li>
+                                        <li>If the code snippet is debugged correctly ,then the key (red crystal) could be activated which would open the door to the                                       next level.</li>
 
-                                        </li>
-                                        <li>
-                                            <strong>Functional Similarity</strong>: We use call graphs to calculate the funcitonal similarity in which function calls and definitions are considered as entities.
-                                        </li>
-                                        <li><strong>Class Similarity</strong>: For this metric, we use collaboration graphs, the class definitions are considered as the entities.</li>
-                                        <li><strong>Module Similarity</strong>: Similarily we use modules as entities for this metric. </li>
+                                        <li>The process will go on until the player quits or the game ends.After the game ends the person would be directed to a menu                                       where he/she can view the score and total time taken.</li>
+                                        <li>Scoring system is done based on the number of incorrect clues provided. </li>
 
+                                        
                                     </ul>
                                 </div>
                                 
-                            </section><!--//doc-section-->
+                            </section> 
 				
 			<section id="result-section" class="doc-section">
                                 <h2 class="section-title">Results</h2>
                                 <div class="section-block">
-                                    We have evaluated 10 repositories using AC<sup>2</sup>. For each repository, we have compared its first release with its subsequent releases.
-                                    <strong><a href="https://github.com/rishalab/AC2/tree/master/Results">Results</a></strong>
-                                    
+                                    We have evaluated the game with 100 Undergraduate students, 30 from IIT Tirupati and 70 from RGUKT.
+                                    <ul> <li>According to MEEGA+, values of 3.5+ usually indicate positive response from the participants.</li> 
+                                        <li>Also, the quality score calculated based on the mean values of the variables and the cronbach alpha values defined by MEEGA+ result in the quality score of 64%.</li> 
+                                        <li>According to MEEGA+, games with quality score value less than 42.5 are considered to be of low quality, between 42.5 to 65 are considered to be of good quality and those with value greater than 65 are considered to be of excellent quality. Thus, we observe that, based on the survey results, G4D++  has a good quality level.</li>
+                                    </ul>
                                     
                                 </div>
                                 
@@ -226,7 +242,7 @@
                                         <div class="col-md-6 col-12">
                                             
                                             <div class="embed-responsive embed-responsive-4by3">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/GNrJfZ0RCVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/GNrJfZ0RCVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                                             </div>
                                         </div>
                                     </div><!--//row-->
@@ -248,7 +264,7 @@
                                     <a class="nav-link scrollto" href="#icons-section">Approach</a>
                                     <a class="nav-link scrollto" href="#feature-section">Features</a>
                                     <a class="nav-link scrollto" href="#uses-section">Uses</a>
-                                    <a class="nav-link scrollto" href="#metric-section">Metrics</a>
+                                    <a class="nav-link scrollto" href="#metric-section">Instructions</a>
 					<a class="nav-link scrollto" href="#result-section">Results</a>
                                     <!-- <nav class="doc-sub-menu nav flex-column">
                                         <a class="nav-link scrollto" href="#html">Parsing class</a>
@@ -272,7 +288,7 @@
                         <div class="content-holder-inner">
                             <div class="desc">
                                 <h3 class="promo-title">Contributors</h3>
-                                <p> A Eashaan Rao, Dheeraj Vagavolu, Sridhar Chimalakonda </p>
+                                <p> Harmit Singh, Sarthak Girotra , Akhila Sri Manasa Venigalla,Dr.Sridhar Chimalakonda </p>
                                 <a class="btn btn-cta" href="" target="_blank"><i class="fas fa-external-link-alt"></i> Preprint</a>
                             </div><!--//desc-->
                         </div><!--//content-holder-inner-->
